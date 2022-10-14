@@ -60,7 +60,7 @@ int left_pyramid (int height)
 
             for(k = 1; k <=i; k++)
             {
-                printf("%i", k);
+                printf("%i", k); // prints numbers
             }
 
             printf("\n");
@@ -76,12 +76,12 @@ int right_pyramid (int height)
     printf("Enter Height: ");
     scanf("%i", &height);
         
-        for(int i = 1; i <= height; i++)
+        for(int i = 1; i <= height; i++) // illustrates height
         {
 
-            for(int j = 1; j <= i; j++)
+            for(int j = 1; j <= i; j++) // illustrates the outer loop
             {
-                printf("%i", j);
+                printf("%i", j); // prints the numbers
             }
 
             printf("\n");
@@ -98,14 +98,14 @@ int full_pyramid (int height)
         printf("Enter Height: ");
         scanf("%i", &height);
         
-        for(i = 1; i <= height; i++)
+        for(i = 1; i <= height; i++) // makes rows
         {
-            for(j = 1; j <= height - i; j++)
+            for(j = 1; j <= height - i; j++) // outer loop
             {
                 printf("  ");
             }
 
-            for(k = 1; k <= (2 * i - 1); k++)
+            for(k = 1; k <= (2 * i - 1); k++) // iterates the inner loops and prints the hashes
             {
                 printf("# ");
             }
@@ -125,15 +125,15 @@ int inverted_pyramid (int height)
         printf("Enter Height: ");
         scanf("%i", &height);
         
-        for(int i = 1; i <= height; i++)
+        for(int i = 1; i <= height; i++) // illustrates rows
         {
 
-            for(j = 1; j < i; j++)
+            for(j = 1; j < i; j++) // makes the outer loop
             {
                 printf(" ");
             }
 
-            for(j = 1; j <= (height * 2 - (2 * i -1)); j++)
+            for(j = 1; j <= (height * 2 - (2 * i -1)); j++) // makes the inner loop and prints the hashes
             {
                 printf("#");
             }
