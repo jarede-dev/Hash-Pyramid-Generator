@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int left_pyramid (int height);
+int right_pyramid (int height);
+int full_pyramid (int height);
+int inverted_pyramid (int height);
+
 int main (void)
 {
 
